@@ -1,4 +1,4 @@
-# 📊 CRM System (Customer Relationship Management)
+# 📊 CRM System (Client Relationship Management)
 
 A simple *CRM web application* built using *HTML, CSS, and JavaScript*.
 This project demonstrates basic customer data management and dynamic updates using JavaScript.
