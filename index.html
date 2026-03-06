@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lead CRM Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+<h2>Lead CRM Dashboard</h2>
+<button onclick="toggleMode()">🌙 Toggle Mode</button>
+</div>
+
+<div class="dashboard">
+
+<div class="card">
+
+<h3>Add New Lead</h3>
+
+<form id="leadForm">
+
+<input type="text" id="name" placeholder="Client Name" required>
+
+<input type="email" id="email" placeholder="Client Email" required>
+
+<input type="text" id="source" placeholder="Lead Source" required>
+
+<select id="status">
+<option>New</option>
+<option>Contacted</option>
+<option>Converted</option>
+</select>
+
+<button type="submit">Add Lead</button>
+
+</form>
+
+</div>
+
+<div class="card">
+
+<h3>Total Leads</h3>
+
+<p id="totalLeads" class="count">0</p>
+
+</div>
+
+</div>
+
+<div class="table-section">
+
+<h3>Lead List</h3>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Source</th>
+<th>Status</th>
+<th>Delete</th>
+</tr>
+
+</thead>
+
+<tbody id="leadTable"></tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
